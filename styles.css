@@ -1,0 +1,44 @@
+html {
+	background-color: gray;
+	width: 100%;
+	text-align: center;
+	color: orange;
+}
+
+.positions {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.top {
+	width: 15%;
+	margin-left: 2%;
+}
+
+.jung {
+	width: 15%;
+	margin-left: 5%;
+}
+
+.mid {
+	width: 15%;
+	margin-left: 5%;
+}
+
+.ad-carry {
+	width: 15%;
+	margin-left: 5%;
+}
+
+.supp {
+	width: 15%;
+	margin-left: 5%;
+}
+
+button {
+	border: 1px solid orange;
+	border-radius: 15px;
+	width: 128px;
+	height: 36px;
+}
