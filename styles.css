@@ -5,35 +5,36 @@ html {
 	color: orange;
 }
 
+.role-header {
+	margin-top: 5%;
+}
+
 .positions {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 100%;
+	align-items: center;
 }
 
 .top {
-	width: 15%;
-	margin-left: 2%;
+	width: 15%;	
 }
 
 .jung {
 	width: 15%;
-	margin-left: 5%;
 }
 
 .mid {
 	width: 15%;
-	margin-left: 5%;
+	
 }
 
 .ad-carry {
 	width: 15%;
-	margin-left: 5%;
 }
 
 .supp {
 	width: 15%;
-	margin-left: 5%;
 }
 
 button {
