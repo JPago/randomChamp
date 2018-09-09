@@ -1,12 +1,17 @@
 html {
-	background-color: gray;
+	background-color: #4C5454;
 	width: 100%;
+	color: #FF715B;
+}
+
+header {
 	text-align: center;
-	color: orange;
+	border-bottom: 1px solid #FF715B;
 }
 
 .role-header {
 	margin-top: 5%;
+	text-align: center;
 }
 
 .positions {
@@ -16,30 +21,25 @@ html {
 	align-items: center;
 }
 
-.top {
-	width: 15%;	
-}
-
-.jung {
-	width: 15%;
-}
-
-.mid {
-	width: 15%;
-	
-}
-
-.ad-carry {
-	width: 15%;
-}
-
+.top,
+.jung,
+.mid,
+.ad-carry,
 .supp {
-	width: 15%;
+	height: 30vh;
+	width: 50%;	
+	background-color: #747474;
+	border: 1px solid #FF715B;
+	margin-bottom: 5%;
+	border-radius: 10px;
 }
 
 button {
-	border: 1px solid orange;
+	background-color: #4C5454;
+	color: #FF715B;
+	border: 1px solid #FF715B;
 	border-radius: 15px;
 	width: 128px;
 	height: 36px;
+	margin-top: 5%;
 }
