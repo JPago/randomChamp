@@ -45,6 +45,19 @@ button {
 	width: 128px;
 	height: 36px;
 	margin-top: 5%;
+	transition: .5s ease;
+}
+
+/* Inverts colors when hovered */
+button:hover {
+	background-color: #FF715B;
+	color: #4C5454;
+	border: 1px solid #4C5454;
+}
+
+/* Takes outline off button when focused */
+button:focus {
+	outline: none;
 }
 
 /* Medium screen size */
