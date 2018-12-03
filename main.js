@@ -16,6 +16,7 @@ function topLane() {
     document.querySelector('.topImage').src = 'ChampionArt/' + randomChamp + '.png';
 };
 
+
 // Random Generator for Jungle
 function jungle() {
 	var randomNumber = Math.floor(Math.random() * 32);
@@ -31,6 +32,7 @@ function jungle() {
     document.querySelector('.jungleImage').src = 'ChampionArt/' + randomChamp + '.png';
 };
 
+
 //Random Generator for Mid Lane
 function midLane() {
 	var randomNumber = Math.floor(Math.random() * 31);
@@ -45,6 +47,8 @@ function midLane() {
 	document.querySelector('.midName').textContent = randomChamp;
     document.querySelector('.midImage').src = 'ChampionArt/' + randomChamp + '.png';
 };
+
+
 //Random Generator for ADC
 function adc() {
 	var randomNumber = Math.floor(Math.random() * 19);
