@@ -25,6 +25,10 @@ header {
 	margin-top: 5%;
 }
 
+img {
+    width: 200px;
+}
+
 .fill {
 	position: absolute;
 	top: 0;
