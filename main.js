@@ -3,8 +3,8 @@ var randomChamp = '';
 
 //Random Generator for Top Lane
 function topLane() {
-	var randomNumber = Math.floor(Math.random() * 34);
-	var randomTop = ['Garen', 'Darius', 'Gangplank', 'Sion', 'Renekton', 'Jax', 'Kled', 'Urgot', 'Yasuo', 'Irelia', 'Nasus', 'Dr. Mundo', 'Teemo', 'Yorick', 'Illaoi', 'Riven', 'Camille', 'Fiora', 'Tryndamere', 'Cho`Gath', 'Malphite', 'Akali', 'Quinn', 'Vladimir', 'Singed', 'Jayce', 'Aatrox', 'Pantheon', 'Poppy', 'Rumble', 'Kennen', 'Shen', 'Gnar', 'Ornn'];
+	var randomNumber = Math.floor(Math.random() * 35);
+	var randomTop = ['Garen', 'Darius', 'Gangplank', 'Sion', 'Renekton', 'Jax', 'Kled', 'Urgot', 'Yasuo', 'Irelia', 'Nasus', 'Dr. Mundo', 'Teemo', 'Yorick', 'Illaoi', 'Riven', 'Camille', 'Fiora', 'Tryndamere', 'Cho`Gath', 'Maokai', 'Malphite', 'Akali', 'Quinn', 'Vladimir', 'Singed', 'Jayce', 'Aatrox', 'Pantheon', 'Poppy', 'Rumble', 'Kennen', 'Shen', 'Gnar', 'Ornn'];
 	for (i = 0; i < randomTop.length; i++) {
 		switch (randomNumber){
 			case randomNumber:
@@ -12,13 +12,14 @@ function topLane() {
 			break;
 		}
 	}
-	console.log(randomChamp);
+	document.querySelector('.topName').textContent = randomChamp;
+    document.querySelector('.topImage').src = 'ChampionArt/' + randomChamp + '.png';
 };
 
 // Random Generator for Jungle
 function jungle() {
-	var randomNumber = Math.floor(Math.random() * 31);
-	var randomJungle = ['Graves', 'Evelynn', 'Lee Sin', 'Nocturne', 'Shyvana', 'Shaco', 'Jax', 'Hecarim', 'Kha\'Zix', 'Kindred', 'Rammus', 'Taliyah', 'Rengar', 'Kayn', 'Nidalee', 'Master Yi', 'Xin Zhao', 'Amumu', 'Warwick', 'Udyr', 'Camille', 'Trundle', 'Jarvan IV', 'Vi', 'Pantheon', 'Zac', 'Wukong', 'Nunu', 'Gragas', 'Sejuani', 'Elise'];
+	var randomNumber = Math.floor(Math.random() * 32);
+	var randomJungle = ['Graves', 'Evelynn', 'Lee Sin', 'Nocturne', 'Shyvana', 'Shaco', 'Jax', 'Hecarim', 'Kha\'Zix', 'Kindred', 'Rammus', 'Taliyah', 'Rengar', 'Kayn', 'Nidalee', 'Master Yi', 'Xin Zhao', 'Amumu', 'Warwick', 'Udyr', 'Camille', 'Trundle', 'Jarvan IV', 'Vi', 'Pantheon', 'Zac', 'Wukong', 'Nunu', 'Gragas', 'Sejuani', 'Elise', 'Rek\'Sai'];
 	for (i = 0; i < randomJungle.length; i++) {
 		switch (randomNumber){
 			case randomNumber:
@@ -26,7 +27,8 @@ function jungle() {
 			break;
 		}
 	}
-	console.log(randomChamp);
+	document.querySelector('.jungleName').textContent = randomChamp;
+    document.querySelector('.jungleImage').src = 'ChampionArt/' + randomChamp + '.png';
 };
 
 //Random Generator for Mid Lane
@@ -40,7 +42,8 @@ function midLane() {
 			break;
 		}
 	}
-	console.log(randomChamp);
+	document.querySelector('.midName').textContent = randomChamp;
+    document.querySelector('.midImage').src = 'ChampionArt/' + randomChamp + '.png';
 };
 //Random Generator for ADC
 function adc() {
@@ -53,7 +56,8 @@ function adc() {
 			break;
 		}
 	}
-	console.log(randomChamp);
+	document.querySelector('.adcName').textContent = randomChamp;
+    document.querySelector('.adcImage').src = 'ChampionArt/' + randomChamp + '.png';
 };
 
 
@@ -68,5 +72,6 @@ function support() {
 			break;
 		}
 	}
-	console.log(randomChamp);
+	document.querySelector('.suppName').textContent = randomChamp;
+    document.querySelector('.suppImage').src = 'ChampionArt/' + randomChamp + '.png';
 };
