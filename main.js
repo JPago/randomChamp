@@ -16,41 +16,42 @@ var randomSupport = ['Morgana', 'Pyke', 'Nami', 'Sona', 'Soraka', 'Alistar', 'Br
 //Random Generator for Top Lane
 function topLane() {
 	champSelect(randomTop);
-	document.querySelector('.topName').textContent = randomChamp;
     document.querySelector('.topImage').src = 'ChampionArt/' + randomChamp + '.png';
+	document.querySelector('.topName').textContent = randomChamp;
 }
 
 
 // Random Generator for Jungle
 function jungle() {
     champSelect(randomJungle);
-	document.querySelector('.jungleName').textContent = randomChamp;
     document.querySelector('.jungleImage').src = 'ChampionArt/' + randomChamp + '.png';
+	document.querySelector('.jungleName').textContent = randomChamp;   
 }
 
 
 //Random Generator for Mid Lane
 function midLane() {
 	champSelect(randomMid);
-	document.querySelector('.midName').textContent = randomChamp;
     document.querySelector('.midImage').src = 'ChampionArt/' + randomChamp + '.png';
+	document.querySelector('.midName').textContent = randomChamp;  
 }
 
 
 //Random Generator for ADC
 function adc() {
 	champSelect(randomAdc);
-	document.querySelector('.adcName').textContent = randomChamp;
     document.querySelector('.adcImage').src = 'ChampionArt/' + randomChamp + '.png';
+	document.querySelector('.adcName').textContent = randomChamp;    
 }
 
 //Random Generator for Support
 function support() {
 	champSelect(randomSupport);
-	document.querySelector('.suppName').textContent = randomChamp;
     document.querySelector('.suppImage').src = 'ChampionArt/' + randomChamp + '.png';
+	document.querySelector('.suppName').textContent = randomChamp;
 }
 
+//Function to Select Random Champs
 function champSelect(arr) {
     var randomNumber = Math.floor(Math.random() * arr.length);
     for (i = 0; i < arr.length; i++) {
