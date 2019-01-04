@@ -79,6 +79,15 @@ button:focus {
 	outline: none;
 }
 
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-left: 25px;
+}
+
 /* Medium screen size */
 @media screen and (min-width: 750px) {
     header {
