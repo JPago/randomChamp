@@ -81,11 +81,11 @@ button:focus {
 
 /* Footer */
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     margin-left: 25px;
+    overflow: hidden;
 }
 
 /* Medium screen size */
@@ -155,6 +155,10 @@ footer {
 	.ad-carry {
 		margin-left: 12.5px;
 	}
+    
+    footer {
+        position: fixed;
+    }
 
 
 
