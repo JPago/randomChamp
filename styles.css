@@ -30,9 +30,25 @@ header {
     font-family: 'Hind Guntur', sans-serif;
 }
 
-img {
+.topImage,
+.jungleImage,
+.midImage,
+.adcImage,
+.suppImage {
+    display: none;
+    position: relative;
     width: 200px;
+    height: 125px;
     border-radius: 5px;
+}
+
+.topIcon,
+.jungleIcon,
+.midIcon,
+.adcIcon,
+.suppIcon {
+    height: 196px;
+    width: 196px;
 }
 
 .fill {
