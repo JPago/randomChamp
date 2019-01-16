@@ -16,6 +16,8 @@ var randomSupport = ['Morgana', 'Pyke', 'Nami', 'Sona', 'Soraka', 'Alistar', 'Br
 //Random Generator for Top Lane
 function topLane() {
 	champSelect(randomTop);
+    document.querySelector('.topIcon').style.display = "none";
+    document.querySelector('.topImage').style.display = "inline";
     document.querySelector('.topImage').src = '';
     document.querySelector('.topImage').src = 'ChampionArt/' + randomChamp + '.png';
 	document.querySelector('.topName').textContent = randomChamp;
@@ -25,6 +27,8 @@ function topLane() {
 // Random Generator for Jungle
 function jungle() {
     champSelect(randomJungle);
+    document.querySelector('.jungleIcon').style.display = "none";
+    document.querySelector('.jungleImage').style.display = "inline";
     document.querySelector('.jungleImage').src = '';
     document.querySelector('.jungleImage').src = 'ChampionArt/' + randomChamp + '.png';
 	document.querySelector('.jungleName').textContent = randomChamp;   
@@ -34,6 +38,8 @@ function jungle() {
 //Random Generator for Mid Lane
 function midLane() {
 	champSelect(randomMid);
+    document.querySelector('.midIcon').style.display = "none";
+    document.querySelector('.midImage').style.display = "inline";
     document.querySelector('.midImage').src = '';
     document.querySelector('.midImage').src = 'ChampionArt/' + randomChamp + '.png';
 	document.querySelector('.midName').textContent = randomChamp;  
@@ -43,6 +49,8 @@ function midLane() {
 //Random Generator for ADC
 function adc() {
 	champSelect(randomAdc);
+    document.querySelector('.adcIcon').style.display = "none";
+    document.querySelector('.adcImage').style.display = "inline";
     document.querySelector('.adcImage').src = '';
     document.querySelector('.adcImage').src = 'ChampionArt/' + randomChamp + '.png';
 	document.querySelector('.adcName').textContent = randomChamp;    
@@ -51,6 +59,8 @@ function adc() {
 //Random Generator for Support
 function support() {
 	champSelect(randomSupport);
+    document.querySelector('.suppIcon').style.display = "none";
+    document.querySelector('.suppImage').style.display = "inline";
     document.querySelector('.suppImage').src = '';
     document.querySelector('.suppImage').src = 'ChampionArt/' + randomChamp + '.png';
 	document.querySelector('.suppName').textContent = randomChamp;
