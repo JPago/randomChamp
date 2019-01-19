@@ -20,7 +20,7 @@ function topLane() {
     document.querySelector('.topImage').style.display = "inline";
     document.querySelector('.topImage').src = '';
     document.querySelector('.topImage').src = 'ChampionArt/' + randomChamp + '.png';
-	document.querySelector('.topName').textContent = randomChamp;
+	document.querySelector('.topName').textContent = randomChamp; 
 }
 
 
@@ -77,8 +77,6 @@ function champSelect(arr) {
 		}
 	}
 }
-
-
 
 
 
