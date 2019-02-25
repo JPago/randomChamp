@@ -13,6 +13,18 @@ var randomAdc = ['Jhin', 'Kai\'Sa', 'Draven', 'Miss Fortune', 'Ezreal', 'Quinn',
 var randomSupport = ['Morgana', 'Pyke', 'Nami', 'Sona', 'Soraka', 'Alistar', 'Brand', 'Zyra', 'Thresh', 'Blitzcrank', 'Lux', 'Vel\'Koz', 'Fiddlesticks', 'Zilean', 'Rakan', 'Bard', 'Leona', 'Janna', 'Karma', 'Taric', 'Braum', 'Lulu', 'Nautilus', 'Shen', 'Tahm Kench', 'Neeko', 'Sylas'];
 
 
+//Function to Select Random Champs
+function champSelect(arr) {
+    var randomNumber = Math.floor(Math.random() * arr.length);
+    for (i = 0; i < arr.length; i++) {
+        switch (randomNumber){
+			case randomNumber:
+			randomChamp = arr[randomNumber];
+			break;
+		}
+	}
+}
+
 //Random Generator for Top Lane
 function topLane() {
 	champSelect(randomTop);
@@ -66,17 +78,6 @@ function support() {
 	document.querySelector('.suppName').textContent = randomChamp;
 }
 
-//Function to Select Random Champs
-function champSelect(arr) {
-    var randomNumber = Math.floor(Math.random() * arr.length);
-    for (i = 0; i < arr.length; i++) {
-        switch (randomNumber){
-			case randomNumber:
-			randomChamp = arr[randomNumber];
-			break;
-		}
-	}
-}
 
 
 
