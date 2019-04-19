@@ -1,6 +1,31 @@
 //Random Champion Variable
 let randomChamp = '';
 
+//Top Variables
+const topIc = document.querySelector('.topIcon');
+const topIm = document.querySelector('.topImage');
+const topNa = document.querySelector('.topName');
+
+//Jungle Variables
+const jungleIc = document.querySelector('.jungleIcon');
+const jungleIm = document.querySelector('.jungleImage');
+const jungleNa = document.querySelector('.jungleName');
+
+//Mid Variables
+const midIc = document.querySelector('.midIcon');
+const midIm = document.querySelector('.midImage');
+const midNa = document.querySelector('.midName');
+
+//ADC Variables
+const adcIc = document.querySelector('.adcIcon');
+const adcIm = document.querySelector('.adcImage');
+const adcNa = document.querySelector('.adcName');
+
+//Support Variables
+const supportIc = document.querySelector('.suppIcon');
+const supportIm = document.querySelector('.suppImage');
+const supportNa = document.querySelector('.suppName');
+
 //Champion Arrays
 const randomTop = ['Garen', 'Darius', 'Gangplank', 'Sion', 'Renekton', 'Jax', 'Kled', 'Urgot', 'Yasuo', 'Irelia', 'Nasus', 'Dr. Mundo', 'Teemo', 'Yorick', 'Illaoi', 'Riven', 'Camille', 'Fiora', 'Tryndamere', 'Cho`Gath', 'Maokai', 'Malphite', 'Akali', 'Quinn', 'Vladimir', 'Singed', 'Jayce', 'Aatrox', 'Pantheon', 'Poppy', 'Rumble', 'Kennen', 'Shen', 'Gnar', 'Ornn', 'Sylas'];
 
@@ -28,54 +53,54 @@ function champSelect(arr) {
 //Random Generator for Top Lane
 function topLane() {
 	champSelect(randomTop);
-    document.querySelector('.topIcon').style.display = "none";
-    document.querySelector('.topImage').style.display = "inline";
-    document.querySelector('.topImage').src = '';
-    document.querySelector('.topImage').src = 'ChampionArt/' + randomChamp + '.png';
-	document.querySelector('.topName').textContent = randomChamp; 
+    topIc.style.display = "none";
+    topIm.style.display = "inline";
+    topIm.src = '';
+    topIm.src = 'ChampionArt/' + randomChamp + '.png';
+	topNa.textContent = randomChamp; 
 }
 
 
 // Random Generator for Jungle
 function jungle() {
     champSelect(randomJungle);
-    document.querySelector('.jungleIcon').style.display = "none";
-    document.querySelector('.jungleImage').style.display = "inline";
-    document.querySelector('.jungleImage').src = '';
-    document.querySelector('.jungleImage').src = 'ChampionArt/' + randomChamp + '.png';
-	document.querySelector('.jungleName').textContent = randomChamp;   
+    jungleIc.style.display = "none";
+    jungleIm.style.display = "inline";
+    jungleIm.src = '';
+    jungleIm.src = 'ChampionArt/' + randomChamp + '.png';
+	jungleNa.textContent = randomChamp;   
 }
 
 
 //Random Generator for Mid Lane
 function midLane() {
 	champSelect(randomMid);
-    document.querySelector('.midIcon').style.display = "none";
-    document.querySelector('.midImage').style.display = "inline";
-    document.querySelector('.midImage').src = '';
-    document.querySelector('.midImage').src = 'ChampionArt/' + randomChamp + '.png';
-	document.querySelector('.midName').textContent = randomChamp;  
+    midIc.style.display = "none";
+    midIm.style.display = "inline";
+    midIm.src = '';
+    midIm.src = 'ChampionArt/' + randomChamp + '.png';
+	midNa.textContent = randomChamp;  
 }
 
 
 //Random Generator for ADC
 function adc() {
 	champSelect(randomAdc);
-    document.querySelector('.adcIcon').style.display = "none";
-    document.querySelector('.adcImage').style.display = "inline";
-    document.querySelector('.adcImage').src = '';
-    document.querySelector('.adcImage').src = 'ChampionArt/' + randomChamp + '.png';
-	document.querySelector('.adcName').textContent = randomChamp;    
+    adcIc.style.display = "none";
+    adcIm.style.display = "inline";
+    adcIm.src = '';
+    adcIm.src = 'ChampionArt/' + randomChamp + '.png';
+	adcNa.textContent = randomChamp;    
 }
 
 //Random Generator for Support
 function support() {
 	champSelect(randomSupport);
-    document.querySelector('.suppIcon').style.display = "none";
-    document.querySelector('.suppImage').style.display = "inline";
-    document.querySelector('.suppImage').src = '';
-    document.querySelector('.suppImage').src = 'ChampionArt/' + randomChamp + '.png';
-	document.querySelector('.suppName').textContent = randomChamp;
+    supportIc.style.display = "none";
+    supportIm.style.display = "inline";
+    supportIm.src = '';
+    supportIm.src = 'ChampionArt/' + randomChamp + '.png';
+	supportNa.textContent = randomChamp;
 }
 
 
